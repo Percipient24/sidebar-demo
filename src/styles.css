@@ -1,0 +1,23 @@
+.main-pane {
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.side-pane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  transform: translateX(-240px);
+  transition: all 0.3s ease-in-out;
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.main-pane.open {
+  transform: translateX(240px);
+}
+.side-pane.open {
+  transform: none;
+}

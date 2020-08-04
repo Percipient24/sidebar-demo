@@ -1,0 +1,4 @@
+<div class="side-pane" [ngClass]="{ open : sidebarService.activeSidebar$.value !== null }">
+  <button *ngIf="sidebarService.activeSidebar$.value !== null" (click)="sidebarService.close()">Close</button>
+  <ng-template adHost></ng-template>
+</div>

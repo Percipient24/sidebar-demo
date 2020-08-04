@@ -1,0 +1,6 @@
+<div class="main-pane" [ngClass]="{ open : sidebarService.activeSidebar$.value !== null }">
+  <p>The main panel with three options for the sidebar:</p>
+  <button (click)="show('one')">one</button>
+  <button (click)="show('two')">two</button>
+  <button (click)="show('three')">three</button>
+</div>
